@@ -69,7 +69,7 @@ Login to your account to re-enable it.
 
 **Enable FIM**
 
-Finally, to enable FIM in all your clients and devices, just navigate to the *Manage Security* section on the main window and select FIM.
+Finally to enable FIM in all your clients and devices, just navigate to the *Manage Security* section on the main window and select FIM.
 
 When FIM is enabled, it will also monitor the main application and system files automatically in all your clients and devices in addition to the selected files you want to monitor from a specific client or device.
 
