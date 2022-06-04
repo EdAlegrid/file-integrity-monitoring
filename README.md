@@ -14,9 +14,9 @@ There are two methods you can take advantage of this feature.
 
 <br>
 
-## 1. Let Node-M2M manage the file monitoring.
+___
 
-### Procedure
+## Let Node-M2M manage the file monitoring
 
 <br>
 
@@ -75,7 +75,9 @@ When FIM is enabled, it will also monitor the main application and system files 
 
 <br>
 
-## 2. Self-managed file monitoring.
+___
+
+## Self-managed file monitoring
 
 <br>
 
