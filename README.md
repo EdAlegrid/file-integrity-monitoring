@@ -10,7 +10,7 @@ There are two methods you can take advantage of this feature.
 
 1. Let Node-M2M manage the file monitoring for you.
 
-2. Manage the file monitoring yourself which provides you more flexibility.
+2. Manage the file monitoring yourself that will provide you more flexibility.
 
 <br>
 
@@ -32,8 +32,8 @@ let device = new m2m.Device(100);
 device.connect(() => {
 
   // set the file you want to monitor
-  // monitor 'test' file for unauthorized changes
-  device.monFile('./test', (result) => console.log(result));
+  // monitor 'myFile.txt' file for unauthorized changes
+  device.monFile('myFile.txt', (result) => console.log(result));
 
 });
 ```
@@ -58,7 +58,7 @@ Select also *email alert* and *active response*.
 
 <br>
 
-Now, try editing the file you are monitoring from your device or client. In this example make a change on 'test' file from device **100**.
+Now, try editing the file you are monitoring from your device or client. In this example make a change on 'myFile.txt' file from device **100**.
 
 You should see an alert message from the *Manage Application* section on your browser in real-time. You should also receive an email alert from your account email. All these indicate that FIM is working.
 
@@ -69,7 +69,9 @@ Login to your account to re-enable it.
 <br>
 
 
-To enable FIM, just navigate to the *Manage Security* section on the main menu and select FIM feature.
+Finally, to enable FIM in all your clients and devices, just navigate to the *Manage Security* section on the main window and select FIM.
+
+When FIM is enabled, it will also monitor the main application and system files automatically in all your clients and devices in addition to the selected files you want to monitor from a specific client or device.
 
 <br>
 
@@ -96,11 +98,12 @@ const m2m = require('m2m');
 let server = new m2m.Device(100);
 
 server.connect(() => {
-  device.setData('file-watching', (data) => {
+  device.setData('monitor-file', (data) => {
     // set the file you want to monitor
     // we will monitor 'myFile.txt' for unauthorized changes
     let v = device.monFileSync('myFile.txt');
     data.send(v);
+    // add any custom actions you want to perform
   });
 });
 ```
@@ -117,21 +120,19 @@ $ node device.js
 
 <br>
 
-#### 1. Watch the data from the remote device using a channel api.
+#### 1. Watch the data from the remote device.
 
 Save the code below as client.js.
 ```js
-'use strict';
-
 const m2m = require('m2m');
 
 let client = new m2m.Client();
 
-server.connect(() => {
-  // watch data using the regular .watchData() method.
-  client.watchData({id:100, channel:'file-watching'}, (data) => {
-    console.log('file-watching', data); // file-watching 1654331542210 myFile.txt
-    // perform your action here
+client.connect(() => {
+  // use the regular .watchData() method from channel api.
+  client.watchData({id:100, channel:'monitor-file'}, (data) => {
+    console.log('monitor-file', data); // 1654331542210 myFile.txt
+    // add any custom actions you want to perform
   });
 });
 ```
