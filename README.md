@@ -14,7 +14,7 @@ There are two methods you can take advantage of this feature.
 
 <br>
 
-### 1. Let Node-M2M manage the file monitoring.
+## 1. Let Node-M2M manage the file monitoring.
 
 <br>
 
@@ -22,11 +22,11 @@ There are two methods you can take advantage of this feature.
 
 <br>
 
-#### 1. Set the file or directory you want to monitor for changes.
+### 1. Set the file or directory you want to monitor for changes.
+
+You can monitor any files from any of your clients and devices. 
 
 ```js
-'use strict';
-
 const m2m = require('m2m');
 
 let device = new m2m.Device(100);
@@ -34,7 +34,7 @@ let device = new m2m.Device(100);
 device.connect(() => {
 
   // set the file you want to monitor
-  // we will monitor 'test' for unauthorized changes
+  // monitor 'test' file for unauthorized changes
   device.monFile('./test', (result) => console.log(result));
 
 });
@@ -48,27 +48,38 @@ $ node device.js
 
 <br>
 
-#### 2. Login to Node-M2M website and enable FIM
+### 2. Login to Node-M2M website and enable FIM
 
 <br>
 
-Before you enable FIM, you can test it first by accessing your device or client from the main menu. From the *Manage Application* section, click *Enable FIM* button. Select *email alert* and *active response*.
+Before you enable FIM, you can test it first by accessing your device or client where the file will be monitored from the main window when you login. 
+ 
+Once inside the client or device, click *Enable FIM* from the *Manage Application* section.
 
-Now, try editing the file you want to manage from your device or client. 
-
-You should see an alert message within the *Manage Application* section on your browser in real-time. You should also receive an email alert from your account email. All these indicate that FIM is working.
-
-If you enabled active response, your remote client or device will be disabled. Once disabled, it will be inaccessible.
-
-To permanently enable FIM, just navigate to the *Manage Security* section on the main menu and select FIM feature.
+Select also *email alert* and *active response*. 
 
 <br>
 
-### 2. Self-managed file monitoring.
+Now, try editing the file you are monitoring from your device or client. In this example make a change on 'test' file from device **100**.
+
+You should see an alert message from the *Manage Application* section on your browser in real-time. You should also receive an email alert from your account email. All these indicate that FIM is working.
+
+If you have enabled active response, your remote client or device will be disabled also for any unauthorized changes. Once disabled, it will be inaccessible from any controlling clients and devices.
+
+Login to your account to re-enable it. 
 
 <br>
 
-In this example, we will monitor a file from a *remote device* using a *client*.
+
+To enable FIM, just navigate to the *Manage Security* section on the main menu and select FIM feature.
+
+<br>
+
+## 2. Self-managed file monitoring.
+
+<br>
+
+In this example, we will monitor a file in the *remote device* from a *client* application.
 
 <br>
 
