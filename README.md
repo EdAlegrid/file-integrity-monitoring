@@ -95,7 +95,7 @@ let server = new m2m.Device(100);
 server.connect(() => {
   device.setData('monitor-file', (data) => {
     // set the file you want to monitor
-    // we will monitor 'myFile.txt' for unauthorized changes
+    // monitor 'myFile.txt' for unauthorized changes
     let v = device.monFileSync('myFile.txt');
     data.send(v);
   });
