@@ -81,7 +81,6 @@ When FIM is enabled, it will also monitor the main application and system files 
 
 In this example, we will monitor a file in the *remote device* from a *client* application.
 
-<br>
 
 ### Device setup
 
