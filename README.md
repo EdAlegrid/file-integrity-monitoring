@@ -83,8 +83,6 @@ In this example, we will monitor a file in the *remote device* from a *client* a
 
 ### Device setup
 
-<br>
-
 #### 1. Set the file or directory you want to monitor for changes.
 
 Save the code below as device.js.
@@ -114,8 +112,6 @@ $ node device.js
 <br>
 
 ### Client setup
-
-<br>
 
 #### 1. Watch the data from the remote device.
 
