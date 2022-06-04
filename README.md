@@ -58,7 +58,7 @@ Select also *email alert* and *active response*.
 
 <br>
 
-Now, try editing the file you are monitoring from your device or client. In this example make a change on 'myFile.txt' file from device **100**.
+Now, try editing the file you are monitoring from your device or client. In this example make a change on 'myFile.txt' file from device *100*.
 
 You should see an alert message from the *Manage Application* section on your browser in real-time. You should also receive an email alert from your account email. All these indicate that FIM is working.
 
