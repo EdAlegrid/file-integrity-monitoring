@@ -88,8 +88,6 @@ In this example, we will monitor a file in the *remote device* from a *client* a
 
 Save the code below as device.js.
 ```js
-'use strict';
-
 const m2m = require('m2m');
 
 let server = new m2m.Device(100);
