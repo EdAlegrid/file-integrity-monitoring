@@ -14,7 +14,6 @@ There are two methods you can take advantage of this feature.
 
 <br>
 
-___
 
 ## Let Node-M2M manage the file monitoring
 
@@ -74,8 +73,6 @@ Finally, to enable FIM in all your clients and devices, just navigate to the *Ma
 When FIM is enabled, it will also monitor the main application and system files automatically in all your clients and devices in addition to the selected files you want to monitor from a specific client or device.
 
 <br>
-
-___
 
 ## Self-managed file monitoring
 
