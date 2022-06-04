@@ -83,6 +83,11 @@ At anytime, you can disable it by selecting *disable FIM*.
 
 In this example, we will monitor a file in the *remote device* from a *client* application.
 
+You do not need to enable FIM from the browser interface for self-managed file monitoring. 
+
+However as additional protection, you can enable it to make your system more resilient from any malicious attacks.
+
+<br>
 
 ### Device setup
 
@@ -142,6 +147,4 @@ $ node client.js
 ```
 
 Everytime someone attempts to change the file 'myFile.txt' from the remote device, the client will receive an alert in real-time. 
-
-You can also enable FIM and at the same time perform any custom actions you may wish to further protect your system. The combination of these two methods provides additional protection on your systems making it more resilient from any malicious attacks. 
 
