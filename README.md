@@ -8,9 +8,9 @@ When enabled, your main application and system files from **m2m** modules in any
 
 There are two methods you can take advantage of this feature. 
 
-## 1. Let Node-M2M manage the file monitoring for you.
+### 1. Let Node-M2M manage the file monitoring for you.
 
-## 2. Manage the file monitoring yourself that will provide you more flexibility.
+### 2. Manage the file monitoring yourself that will provide you more flexibility.
 
 <br>
 
