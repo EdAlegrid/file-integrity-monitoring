@@ -2,9 +2,9 @@
 
 ## Overview
 
-Node-M2M has a built-in file integrity monitoring (FIM) feature. 
+Node-M2M has a built-in **file integrity monitoring** (FIM) feature. 
 
-When enabled, your main application and system files from **m2m** modules in any of your remote devices and clients will be monitored in real-time for any unauthorized changes. 
+When enabled, your main application and system files from all of your remote devices and clients will be monitored by Node-M2M in real-time for any unauthorized changes. 
 
 There are two methods you can take advantage of this feature. 
 
@@ -15,7 +15,7 @@ There are two methods you can take advantage of this feature.
 <br>
 
 
-# Let Node-M2M manage the file monitoring
+## **Node-M2M managed file monitoring**
 
 <br>
 
@@ -53,15 +53,15 @@ $ node device.js
 
 Before you enable FIM, you can test it first. You can enable FIM temporarily for test only for each clients or devices available on your account. 
 
-Select the client or device where the file will be monitored   from the main window when you login and click the access client/device button. You will need to enter your *security code*.
+Select the client or device where the file will be monitored from the main window when you login and click the access client/device button or the client/device Id. You will need to enter your *security code*.
 
 You will then be directed to the client or device window. Click *Enable FIM* from the *Manage Application* section. Select *email alert* and *active response* as well to test if they working. 
 
-Now, try editing the file you are monitoring from your device or client. In this example make a change on 'myFile.txt' file from device *100*.
+Now, try editing the file you are monitoring from your remote client or device. In this example make a change on 'myFile.txt' file from device *100*.
 
 You should see an alert message from the *Manage Application* section on your browser in real-time. You should also receive an email alert from your account email. All these indicate that FIM is working.
 
-If you have enabled active response, your remote client or device will be disabled also for any unauthorized changes on the file. Once disabled, it will be inaccessible from any controlling clients and devices.
+If you have enabled active response, your remote client or device will be disabled also for any unauthorized changes on the file. Once disabled, it will be inaccessible from any controlling clients or devices.
 
 Login to your account to re-enable it. 
 
@@ -69,13 +69,15 @@ Login to your account to re-enable it.
 
 **Enable FIM**
 
-Finally to enable FIM in all your clients and devices, just navigate to the *Manage Security* section on the main window and select FIM.
+Finally to enable FIM, just navigate to the *Manage Security* section on the main window and select *enable FIM*.
 
 When FIM is enabled, it will also monitor the main application and system files automatically in all your clients and devices in addition to the selected files you want to monitor from a specific client or device.
 
+At anytime, you can disable it by selecting *disable FIM*.
+
 <br>
 
-# Self-managed file monitoring
+## **Self-managed file monitoring**
 
 <br>
 
@@ -93,12 +95,14 @@ const m2m = require('m2m');
 let server = new m2m.Device(100);
 
 server.connect(() => {
+
   device.setData('monitor-file', (data) => {
     // set the file you want to monitor
     // monitor 'myFile.txt' for unauthorized changes
     let v = device.monFileSync('myFile.txt');
     data.send(v);
   });
+
 });
 ```
 
@@ -121,11 +125,13 @@ const m2m = require('m2m');
 let client = new m2m.Client();
 
 client.connect(() => {
+
   // use the regular .watchData() method from channel api.
   client.watchData({id:100, channel:'monitor-file'}, (data) => {
     console.log('monitor-file', data); // 1654331542210 myFile.txt
     // add here any custom actions you want to perform
   });
+
 });
 ```
 
