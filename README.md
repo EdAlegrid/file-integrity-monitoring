@@ -49,24 +49,25 @@ $ node device.js
 
 <br>
 
-Before you enable FIM, you can test it first by accessing your device or client where the file will be monitored from the main window when you login. 
- 
-Once inside the client or device, click *Enable FIM* from the *Manage Application* section.
+**FIM Test**
 
-Select also *email alert* and *active response*. 
+Before you enable FIM, you can test it first. You can enable FIM temporarily for test only for each clients or devices available on your account. 
 
-<br>
+Select the client or device where the file will be monitored   from the main window when you login and click the access client/device button. You will need to enter your *security code*.
+
+You will then be directed to the client or device window. Click *Enable FIM* from the *Manage Application* section. Select *email alert* and *active response* as well to test if they working. 
 
 Now, try editing the file you are monitoring from your device or client. In this example make a change on 'myFile.txt' file from device *100*.
 
 You should see an alert message from the *Manage Application* section on your browser in real-time. You should also receive an email alert from your account email. All these indicate that FIM is working.
 
-If you have enabled active response, your remote client or device will be disabled also for any unauthorized changes. Once disabled, it will be inaccessible from any controlling clients and devices.
+If you have enabled active response, your remote client or device will be disabled also for any unauthorized changes on the file. Once disabled, it will be inaccessible from any controlling clients and devices.
 
 Login to your account to re-enable it. 
 
 <br>
 
+**Enable FIM**
 
 Finally, to enable FIM in all your clients and devices, just navigate to the *Manage Security* section on the main window and select FIM.
 
