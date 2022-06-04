@@ -16,8 +16,6 @@ There are two methods you can take advantage of this feature.
 
 ## 1. Let Node-M2M manage the file monitoring.
 
-<br>
-
 ### Procedure
 
 <br>
