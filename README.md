@@ -102,7 +102,6 @@ server.connect(() => {
     // we will monitor 'myFile.txt' for unauthorized changes
     let v = device.monFileSync('myFile.txt');
     data.send(v);
-    // add any custom actions you want to perform
   });
 });
 ```
@@ -131,7 +130,7 @@ client.connect(() => {
   // use the regular .watchData() method from channel api.
   client.watchData({id:100, channel:'monitor-file'}, (data) => {
     console.log('monitor-file', data); // 1654331542210 myFile.txt
-    // add any custom actions you want to perform
+    // add here any custom actions you want to perform
   });
 });
 ```
