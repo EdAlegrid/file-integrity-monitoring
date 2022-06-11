@@ -71,7 +71,7 @@ If you have enabled active response, your remote client or device will be disabl
 
 **Enable FIM**
 
-Finally to enable FIM, just navigate to the *Manage Security* section on the main window and select *enable FIM*.
+Finally to enable FIM, just navigate to the *Manage Security* section from the main window and select *enable FIM*.
 
 When FIM is enabled, it will also monitor the main application and system files automatically in all your clients and devices in addition to the selected files you want to monitor from a specific client or device.
 
