@@ -83,7 +83,7 @@ At anytime, you can disable it by selecting *disable FIM*.
 
 <br>
 
-In this example, we will monitor a file in the *remote device* from a *client* application.
+In this example, we will monitor a file in the *remote device* using a *client* application.
 
 You do not need to enable FIM from the browser interface for self-managed file monitoring. 
 
