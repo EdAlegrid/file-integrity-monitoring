@@ -73,7 +73,7 @@ Finally to enable FIM, just navigate to the *Manage Security* section from the m
 
 When FIM is enabled, it will also monitor the main application and system files automatically in all your clients and devices in addition to the selected files you want to monitor from a specific client or device.
 
-At anytime, you can disable it by selecting *disable FIM*.
+At anytime, you can **disable FIM** by selecting *disable FIM* from the *Manage Security* section of the main window.
 
 <br>
 
