@@ -51,9 +51,13 @@ $ node device.js
 
 **FIM Test**
 
-Before you enable FIM, you can test it first. You can enable FIM temporarily for test only for each clients or devices available on your account. 
+Before you enable FIM, you can test it first. 
 
-Select the client or device where the file will be monitored from the main window when you login and click the access client/device button or the client/device Id. You will need to enter your *security code*.
+You can enable FIM temporarily for test only for each clients or devices available on your account. 
+
+1. Select the client or device where the file will be monitored from the main window when you login.
+
+3. Click the *access client/device* button or the *client/device Id*. You will need to enter your *security code*.
 
 You will then be directed to the client or device window. Click *Enable FIM* from the *Manage Application* section. Select *email alert* and *active response* as well to test if they working. 
 
