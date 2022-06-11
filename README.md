@@ -61,9 +61,7 @@ Now, try editing the file you are monitoring from your remote client or device. 
 
 You should see an alert message from the *Manage Application* section on your browser in real-time. You should also receive an email alert from your account email. All these indicate that FIM is working.
 
-If you have enabled active response, your remote client or device will be disabled also for any unauthorized changes on the file. Once disabled, it will be inaccessible from any controlling clients or devices.
-
-Login to your account to re-enable it. 
+If you have enabled active response, your remote client or device will be disabled also for any unauthorized changes on the file. Once disabled, it will be inaccessible from any controlling clients or devices. Login to your account to re-enable it. 
 
 <br>
 
