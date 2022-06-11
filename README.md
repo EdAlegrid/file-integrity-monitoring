@@ -79,7 +79,7 @@ At anytime, you can disable it by selecting *disable FIM*.
 
 <br>
 
-## Self-managed File Monitoring
+## Self-Managed File Monitoring
 
 <br>
 
