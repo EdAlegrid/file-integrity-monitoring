@@ -57,9 +57,9 @@ You can enable FIM temporarily for test only for each clients or devices availab
 
 1. Select the client or device where the file will be monitored from the main window when you login.
 
-3. Click the *access client/device* button or the *client/device Id*. You will need to enter your *security code*.
+2. Click the *access client/device* button or the *client/device Id*. You will need to enter your *security code*.
 
-You will then be directed to the client or device window. Click *Enable FIM* from the *Manage Application* section. Select *email alert* and *active response* as well to test if they working. 
+3. You will now be directed to the selected client or device window. Click *Enable FIM* from the *Manage Application* section. Select *email alert* and *active response* as well to test if they working. 
 
 Now, try editing the file you are monitoring from your remote client or device. In this example make a change on 'myFile.txt' file from device *100*.
 
