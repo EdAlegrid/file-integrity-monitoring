@@ -15,7 +15,7 @@ There are two methods you can take advantage of this feature.
 <br>
 
 
-## **Node-M2M managed file monitoring**
+## Node-M2M Managed File Monitoring
 
 <br>
 
@@ -79,7 +79,7 @@ At anytime, you can disable it by selecting *disable FIM*.
 
 <br>
 
-## **Self-managed file monitoring**
+## Self-managed File Monitoring
 
 <br>
 
